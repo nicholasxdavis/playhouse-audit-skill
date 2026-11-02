@@ -1,0 +1,16 @@
+{
+  "name": "playhouse-audit-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Deploy gate for playhouse-audit: copy lint, compress, Lighthouse",
+  "scripts": {
+    "gate": "node gate.mjs",
+    "audit": "node audit.mjs",
+    "copy-gate": "python check_copy.py",
+    "compress": "python compress_assets.py"
+  },
+  "dependencies": {
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.2.1"
+  }
+}
